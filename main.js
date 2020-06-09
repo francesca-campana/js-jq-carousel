@@ -15,14 +15,13 @@ $(document).ready(function () {
 
 });
 
-//Creerò 2 funxioni che mi permetteranno di far funzionare il carosello, ovvero:
+//Creerò 2 funxioni che mi permetteranno di far funzionare il carosello,
+//--> cliccando sulla freccetta dx 'next' le immagini andranno avanti assieme ai pallini blu
 //--> Per andare avanti :
-//    partendo dall'img 'first' rimuoverà la stessa e aggiungerà la successiva
-//    fino ad arrivare all'ultima img,'last', per poi ritornare all'img 'first'
-//    secondo la logica che se un img contiene la claasse 'last' renderà nuovamente visibile
-//    l'img con classe 'first', per poi ricominciare da capo
+//    parto dall''immagineCorrente' a cui si rimuoverà la classe 'active',
+//    se l'elemento è in classe 'last' verrà aggiunta la classe 'active' e quindi sarà visibile la prima immagine
+//    altrimenti all'immagineCorrente sarà visibile un'immagine successiva
 //    stessa logica applicata ai pallini
-//--> Per andare indietro:
 
 function getImageNext(){
   var immagineCorrente = $('.images img.active');
@@ -42,6 +41,12 @@ function getImageNext(){
   }
 
 }
+//--> cliccando ulla freccetta sx 'prev' le immagini andranno indietro assieme ai pallini blu
+//--> Per andare indietro:
+//    parto dall''immagineCorrente' a cui si rimuoverà la classe 'active',
+//    se l'elemento è in classe 'first' verrà aggiunta la classe 'active' e quindi sarà visibile l'ultima' immagine
+//    altrimenti all'immagineCorrente sarà visibile un'immagine precedente
+//    stessa logica applicata ai pallini
 function getImagePrev(){
   var immagineCorrente = $ ('.images img.active');
   var pallinoCorrente = $ ('.nav i.active');
