@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 });
 
-//Creerò 2 funxioni che mi permetteranno di far funzionare il carosello,
+//Creerò 2 funzioni che mi permetteranno di far funzionare il carosello,
 //--> cliccando sulla freccetta dx 'next' le immagini andranno avanti assieme ai pallini blu
 //--> Per andare avanti :
 //    parto dall''immagineCorrente' a cui si rimuoverà la classe 'active',
@@ -41,7 +41,7 @@ function getImageNext(){
   }
 
 }
-//--> cliccando ulla freccetta sx 'prev' le immagini andranno indietro assieme ai pallini blu
+//--> cliccando sulla freccetta sx 'prev' le immagini andranno indietro assieme ai pallini blu
 //--> Per andare indietro:
 //    parto dall''immagineCorrente' a cui si rimuoverà la classe 'active',
 //    se l'elemento è in classe 'first' verrà aggiunta la classe 'active' e quindi sarà visibile l'ultima' immagine
